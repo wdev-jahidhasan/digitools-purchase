@@ -21,6 +21,8 @@ const Navbar = () => {
             <li><a>Pricing</a></li>
             <li><a>Testimonials</a></li>
             <li><a>FAQ</a></li>
+            <li><a>Testimonials</a></li>
+            <li><a>FAQ</a></li>
           </ul>
         </div>
 
