@@ -23,9 +23,9 @@ const Banner = () => {
             Access premium AI tools, design assets, templates, and productivity
             software—all in one place. Start creating faster today.
           </p>
-          <div className='flex flex-col sm:flex-row gap-4 justify-center lg:justify-start'>
+          <div className='flex flex-col gap-4 sm:flex-row'>
             <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-3xl">Explore Products</button>
-            <button className='btn btn-outline btn-primary rounded-3xl'><CiPlay1 /> Watch Videos</button>
+            <button className='btn btn-outline btn-primary rounded-3xl'><CiPlay1 /> Watch Demo</button>
           </div>
         </div>
       </div>
