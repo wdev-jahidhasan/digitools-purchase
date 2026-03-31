@@ -10,6 +10,12 @@ const Cart = ({ carts, setCarts }) => {
     alert('Done')
   }
 
+  const handleRemove = (cart) => {
+    alert('Deleted')
+    const filteredCart = carts.filter(c => c.id !== cart.id)
+    setCarts(filteredCart)
+  }
+
   return (
     <div className='max-w-7xl mx-auto my-16 px-2'>
       <h1 className='text-5xl font-bold text-center'>Your Cart</h1>
@@ -38,7 +44,7 @@ const Cart = ({ carts, setCarts }) => {
               </div>
 
               <div>
-                <p className='text-red-500 font-semibold'>Remove</p>
+                <p onClick={()=> handleRemove(cart)} className='text-red-500 font-semibold'>Remove</p>
               </div>
             </div>
 
