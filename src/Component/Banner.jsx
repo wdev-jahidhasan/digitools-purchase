@@ -5,17 +5,9 @@ import { CiPlay1 } from "react-icons/ci";
 
 const Banner = () => {
   return (
-
-
     <div>
       <div className="hero-content flex flex-col lg:flex-row-reverse w-full mx-auto gap-6">
-
-        <img
-            src={bannerImg}
-          />
-
-
-
+        <img src={bannerImg} />
         <div className='w-full lg:w-1/2 text-center lg:text-left'>
           <button className='text-[#4F39F6] bg-gray-100 rounded-3xl px-3 py-1 text-sm md:text-base mb-4 flex items-center gap-2'><img className='h-4 w-4' src={circle} alt="" /> New: AI-Powered Tools Available</button>
           <h1 className="text-3xl md:text-5xl font-bold">Supercharge Your Digital Workflow</h1>

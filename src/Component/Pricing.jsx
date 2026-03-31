@@ -10,8 +10,6 @@ const Pricing = () => {
       </div>
 
       <div className='grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-7xl mx-auto my-5'>
-
-        
         <div className="card w-11/12 mx-auto shadow-sm bg-gray-50">
           <div className="card-body">
             <h2 className="text-3xl font-bold">Starter</h2>
@@ -45,14 +43,14 @@ const Pricing = () => {
                 <span>Community support</span>
               </li>
             </ul>
-            
+
             <div className="mt-6">
               <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block rounded-3xl">Get Started Free</button>
             </div>
           </div>
         </div>
 
-        
+
         <div className="card w-11/12 mx-auto shadow-sm bg-linear-to-br from-[#4F39F6] to-[#9514FA] text-white relative">
           <div className="card-body">
             <span className="badge badge-lg badge-warning absolute right-[38%] -top-3">Most Popular</span>
@@ -86,16 +84,16 @@ const Pricing = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
                 <span>Advanced analytics</span>
               </li>
-              
+
             </ul>
-            
+
             <div className="mt-6">
               <button className="btn bg-white btn-block rounded-3xl">Start Pro Trial</button>
             </div>
           </div>
         </div>
 
-        
+
         <div className="card w-11/12 mx-auto shadow-sm bg-gray-50">
           <div className="card-body">
             <h2 className="text-3xl font-bold">Enterprise</h2>
@@ -129,20 +127,13 @@ const Pricing = () => {
                 <span>Custom branding</span>
               </li>
             </ul>
-            
+
             <div className="mt-6">
               <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block rounded-3xl">Contact Sales</button>
             </div>
           </div>
         </div>
-
-
-
       </div>
-
-
-
-
     </div>
   );
 };
