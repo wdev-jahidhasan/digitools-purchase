@@ -38,13 +38,13 @@ const Footer = () => {
   <nav>
     <h6 className="footer-title">Social</h6>
     <div className="grid grid-flow-col gap-4">
-      <a>
+      <a className='bg-white p-1 rounded-full text-lg text-black'>
         <FaInstagram/>
       </a>
-      <a>
+      <a className='bg-white p-1 rounded-full text-lg text-black'>
         <FaFacebookF />
       </a>
-      <a>
+      <a className='bg-white p-1 rounded-full text-lg text-black'>
         <FaXTwitter />
       </a>
     </div>
