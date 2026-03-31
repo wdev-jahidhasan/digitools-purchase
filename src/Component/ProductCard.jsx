@@ -1,16 +1,25 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const ProductCard = ({product, carts, setCarts}) => {
 
   const handleBuyNow = () => {
-    alert('Added to cart')
+
+    const isFound = carts.find(item => item.id === product.id)
+
+    if(isFound){
+      toast.warning('Already added')
+      return
+    }
+
+    toast.success('Successfully added to cart')
     setCarts([...carts, product])
   }
 
   return (
     <div>
     <div className='relative border-2 border-gray-200 shadow-lg rounded-xl px-8 m-2'>
-              <span className={`absolute top-3 right-2 badge ${product.tag === "Popular"
+              <span className={`absolute top-3 right-2 badge text-white font-bold ${product.tag === "Popular"
                   ? "badge-primary"
                   : product.tag === "Best Seller"
                     ? "badge-warning"

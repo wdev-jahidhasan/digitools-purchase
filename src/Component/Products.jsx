@@ -8,7 +8,7 @@ const Products = ({ productPromise, carts, setCarts }) => {
 
     <div className='py-10'>
 
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-5 w-full max-w-7xl mx-auto py-8'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-5 w-full max-w-7xl mx-auto'>
 
         {products.map(product =>
           <ProductCard

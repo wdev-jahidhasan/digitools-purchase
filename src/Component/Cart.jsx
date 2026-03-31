@@ -1,5 +1,6 @@
 import React from 'react';
 import emptyCart from "../assets/empty-cart.webp"
+import { toast } from 'react-toastify';
 
 const Cart = ({ carts, setCarts }) => {
   
@@ -7,11 +8,11 @@ const Cart = ({ carts, setCarts }) => {
 
   const handleCheckout = () =>{
     setCarts([])
-    alert('Done')
+    toast.success('Successful')
   }
 
   const handleRemove = (cart) => {
-    alert('Deleted')
+    toast.error('Item removed')
     const filteredCart = carts.filter(c => c.id !== cart.id)
     setCarts(filteredCart)
   }
