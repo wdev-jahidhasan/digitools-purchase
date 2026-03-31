@@ -8,6 +8,12 @@ import Statistics from './Component/Statistics'
 import Steps from './Component/Steps'
 import Cart from './Component/Cart'
 
+const getProducts = async () => {
+  const res  = await fetch("/info.json")
+  return res.json()
+}
+const productPromise = getProducts();
+
 function App() {
 
   return (
@@ -15,7 +21,7 @@ function App() {
     <Navbar></Navbar>
     <Banner></Banner>
     <Statistics></Statistics>
-    <Products></Products>
+    <Products productPromise={productPromise}></Products>
     <Cart></Cart>
     <Steps></Steps>
     <Pricing></Pricing>
